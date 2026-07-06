@@ -10,7 +10,7 @@ import service.TaskService;
  */
 public class Main {
     public static void main(String[] args) {
-        TaskService taskService = new TaskService();
+        TaskService taskService = new TaskService(null);
         Menu        menu        = new Menu(taskService);
         menu.run();
     }
